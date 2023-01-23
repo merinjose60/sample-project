@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div class="form-group">
+        <h3>{{form.as_p}}</h3>
+<!--        form is the variable passed from backend to frontend-->
+        <a href="" class="btn btn-primary">submit</a>
+<!--        <input type="submit" class="btn btn-primary">-->
+
+    </div>
+
+</form>
+</body>
+</html>
